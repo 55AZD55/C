@@ -18,13 +18,10 @@ int main(void)
     while (count < sz_ar && scanf("%hd", &pows[count]) == 1)
         count++;
 
-    int count_3 = 0;
-
     for (int i = 0; i < (int)count; i++)
     {
         if (pows[i] % 3 == 0)
         {
-            count_3++;
             for (int j = i; j < (int)count - 1; j++)
             {
                 pows[j] = pows[j + 1];
